@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./app.css">
     <script src="./app.js" defer></script>
 </head>
 <body>
     <h1>My Todos</h1>
-    <input type="text" placeholder="TaskId" id="taskid">
-    <input type="text" placeholder="Add new task" id="newtask">
-    <button type="submit" id="btn">Submit</button>
+    <div id="container">
+        <div class="input">
+            <h2>Name</h2>
+            <input type="text" placeholder="Task ID" id="taskid" class="task-input">
+        </div>
+        <div class="input">
+            <h2>Description</h2>
+            <input type="text" placeholder="Add new task information" id="newtask" class="task-input">
+        </div>
+        
+        <button type="submit" id="btn">Submit</button>
+    </div>
 
-    <li id="tasklist"></li>
+    <div id="storedtask">
+        <ul id="tasklist"></ul>
+    </div>
 </body>
 </html>
