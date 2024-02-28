@@ -1,5 +1,5 @@
 body{
-    background-color: blueviolet;
+    background-color:#623e3e;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,8 +8,14 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+#container{
+    background-color: bisque;
+    height: 15vh;
+    width: 92vh;
+    text-align: center;
+}
 h1 {
-    color: white;
+    color: bisque;
 }
 
 input {
@@ -23,7 +29,7 @@ input {
 #btn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: gold;
+    background-color: rgb(255, 166, 0);
     color: white;
     border: none;
     border-radius: 50px;
@@ -34,6 +40,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-top: 20px;
 }
 
 li {
@@ -65,13 +72,15 @@ button {
     margin-right: 10px;
 }
 .input h2{
-    color: white;
+    color: #623e3e;
 } 
 #storedtask {
-    margin-top: 50px; 
-    width: 45%;
+    margin-top: 20px; 
+    width: 92vh;
     margin-bottom: 30px; 
-    background-color: blueviolet;
+    background-color: bisque;
+    border: 3px solid #623e3e;
+    height: 50vh;
 }
 .flex {
     display: flex;
@@ -81,4 +90,5 @@ button {
 .task-info {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }

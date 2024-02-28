@@ -4,7 +4,7 @@ let id = document.getElementById("taskid") as HTMLInputElement;
 let description = document.getElementById("newtask") as HTMLInputElement;
 let save = document.getElementById("tasklist") as HTMLUListElement;
 
-btn.addEventListener("click", function addTask() {
+btn.addEventListener("submit", ()=> {
     if ( id.value.length > 0,  description.value.length > 0 ) {
          Todo.push({ id: id.value, description: description.value });
          displayTasks();
