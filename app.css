@@ -29,8 +29,9 @@ input {
 }
 
 #btn {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: px;
+    font-size: 15px;
+    font-weight: 500px;
     background-color: rgb(255, 166, 0);
     color: white;
     border: none;
@@ -61,9 +62,10 @@ ul {
 button {
     padding: 8px;
     font-size: 14px;
-    background-color: #957777d8;
-    color: bisque;
-    border: 2px solid;
+    background-color: white;
+    width: 80px;
+    color: rgb(255, 166, 0);
+    border: 2px solid rgb(255, 166, 0);
     border-radius: 15px;
     cursor: pointer;
 }
@@ -90,6 +92,9 @@ button {
 .flex {
     display: flex;
     justify-content: space-between;
+    background-color:antiquewhite;
+    margin-top: 10px;
+    padding: 5px;
 }
 
 .task-info {
