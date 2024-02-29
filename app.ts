@@ -4,20 +4,26 @@ let id = document.getElementById("taskid") as HTMLInputElement;
 let description = document.getElementById("newtask") as HTMLInputElement;
 let save = document.getElementById("tasklist") as HTMLUListElement;
 
-btn.addEventListener("submit", ()=> {
+btn.addEventListener("click", ()=> {
     if ( id.value.length > 0,  description.value.length > 0 ) {
-         Todo.push({ id: id.value, description: description.value });
-         displayTasks();
+         if (Todo.length  < 5) {
+            Todo.push({ id: id.value , description: description.value });
+            displayTasks();
 
-         id.value ='';
-         description.value='';
+            id.value ='';
+            description.value='';
+
+         } else {
+            alert("You can only have a maximum of 5 tasks.");
+         }
+         
     }
     
 });
 
 function displayTasks() {
     save.innerHTML = '';
-    for (let index = 0; index < Todo.length; index++) {
+    for (let index = 0; index < Math.min(Todo.length, 5); index++) {
         const task = Todo[index];
         save.innerHTML +=
         `<ul> 
