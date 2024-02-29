@@ -21,17 +21,18 @@ function displayTasks() {
         const task = Todo[index];
         save.innerHTML +=
         `<ul> 
-           <div class="flex">
-               <div class="task-info">
-                  <span id="taskD">${task.id} </span>
-                  <span id="taskDesc">${task.description} </span>
-               </div> 
-               <div class="buttons">
-                  <button onclick="editTask(${index})">Edit</button> 
-                  <button onclick="deleteTask(${index})">Delete</button></div>
-           </div>
-         </ul>`;
-    }
+        <div class="flex">
+            <div class="task-info">
+               <span id="taskD">${task.id} </span>
+               <span id="taskDesc">${task.description} </span>
+            </div> 
+            <div class="buttons">
+               <button id="edit-button" onclick="editTask(${index})">Edit</button> 
+               <button  id="delete-button"  onclick="deleteTask(${index})">Delete</button>
+               </div>
+        </div>
+      </ul>`;
+ }
 }
 
 function deleteTask(index: number) {

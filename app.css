@@ -1,5 +1,5 @@
 body{
-    background-color:#623e3e;
+    background-color:#722f37 ;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,9 +10,11 @@ body{
 }
 #container{
     background-color: bisque;
-    height: 15vh;
-    width: 92vh;
+    width: 70%;
     text-align: center;
+    padding-bottom: 20px;
+    
+
 }
 h1 {
     color: bisque;
@@ -44,7 +46,7 @@ ul {
 }
 
 li {
-    background-color: #623e3e;
+    background-color: #722f37;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 5px;
@@ -57,10 +59,10 @@ li {
 button {
     padding: 8px;
     font-size: 14px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: #957777d8;
+    color: bisque;
+    border: 2px solid;
+    border-radius: 15px;
     cursor: pointer;
 }
 .task-input {
@@ -76,11 +78,12 @@ button {
 } 
 #storedtask {
     margin-top: 20px; 
-    width: 92vh;
+    width: 68.5%;
     margin-bottom: 30px; 
     background-color: bisque;
     border: 3px solid #623e3e;
     height: 50vh;
+    padding: 10px;
 }
 .flex {
     display: flex;
@@ -90,5 +93,16 @@ button {
 .task-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
+    max-width: 350px;
+    overflow: hidden;
 }
+#taskDesc{
+    color: #623e3e;
+    font-size: 15px;
+}
+#taskD{
+    color: chocolate;
+    font-size: larger;
+}
+
