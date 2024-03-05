@@ -6,19 +6,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
+    width: 100vw;
 }
 #container{
-    background-color: bisque;
     width: 75%;
     text-align: center;
     padding-bottom: 20px;
     margin: 0;
-    
-
+    border: 3px solid #623e3e;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 h1 {
-    color: bisque;
+    color: #623e3e;
+    text-align: center;
 }
 
 input {
@@ -26,7 +30,7 @@ input {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: wheat;
+    background-color: white;
 }
 
 #btn {
@@ -82,20 +86,24 @@ button {
     color: #623e3e;
 } 
 #storedtask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 75%;
     margin-bottom: 30px; 
-    background-color: bisque;
     border: 3px solid #623e3e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: 50vh;
-    padding: 10px;
 }
 .flex {
     display: flex;
     justify-content: space-between;
-    background-color: wheat;
-    margin-top: 10px;
-    padding: 5px;
-    width: 95%;
+    align-items: center;
+    background-color: rgb(173, 173, 153);
+    border-radius: 5px;
+    padding: 15px;
+    width: 40vw;
     margin: 10px;
 }
 
@@ -121,4 +129,13 @@ button {
 #delete-button{
     background-color: white;
     border: 2px solid red;
+}
+
+#mid{
+    width: 60vw;
+    height: 80vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
