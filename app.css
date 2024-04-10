@@ -100,7 +100,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(173, 173, 153);
+    background-color: cornsilk;
     border-radius: 5px;
     padding: 15px;
     width: 40vw;
@@ -139,3 +139,36 @@ button {
     flex-direction: column;
     align-items: center;
 }
+
+
+/* Apply styles for screens smaller than 768px (typical tablets and mobiles) */
+@media (max-width: 768px) {
+    #mid {
+        width: 90%; /* Adjust width to occupy more of the viewport */
+        height: auto; /* Let height adjust based on content */
+    }
+
+    #container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .flex {
+        width: 90%; /* Adjust task item width */
+        font-size: 14px; /* Reduce font size for task items */
+    }
+
+    .input,
+    .task-input {
+        width: 90%; /* Adjust input width */
+    }
+
+    button {
+        font-size: 12px; /* Reduce button font size */
+    }
+
+    #storedtask {
+        width: 90%; /* Adjust task list width */
+        height: auto; /* Let task list height adjust based on content */
+    }
+}
+
